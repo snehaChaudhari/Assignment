@@ -24,11 +24,7 @@ const AppNavigator = createStackNavigator({
            screen:detailView, 
            navigationOption: ()=>({
              header:null,
-              //  title: '',
-              //  headerStyle: {
-              //    elevation: 0
-              //  }
-           })
+          })
        },
     },
   {
