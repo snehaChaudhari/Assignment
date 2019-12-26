@@ -28,7 +28,14 @@ const AppNavigator = createStackNavigator({
        },
     },
   {
-    initialRouteName: "splashScreen"
+    initialRouteName: "splashScreen",
+    defaultNavigationOptions: {
+      headerStyle: {
+        borderBottomWidth:0,
+       
+      },
+      
+    },
   }
 )  
 
