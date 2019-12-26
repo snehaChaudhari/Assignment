@@ -14,7 +14,11 @@ const AppNavigator = createStackNavigator({
        mainScreen: {
            screen: mainScreen,
            navigationOption: ()=>( {
-            header: null
+            header: null,
+            headerStyle: {
+              borderBottomWidth:0,
+             
+            },
             
            })
           
@@ -23,7 +27,11 @@ const AppNavigator = createStackNavigator({
        detailView: {
            screen:detailView, 
            navigationOption: ()=>({
-             header:null,
+            //  header:null,
+            //  headerStyle: {
+            //   borderBottomWidth:0,
+             
+            // },
           })
        },
     },
@@ -32,9 +40,8 @@ const AppNavigator = createStackNavigator({
     defaultNavigationOptions: {
       headerStyle: {
         borderBottomWidth:0,
-       
       },
-      
+      headerTintColor:'black'
     },
   }
 )  

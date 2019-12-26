@@ -25,7 +25,7 @@ export default StyleSheet.create({
         height: '70%'
     },
     descriptionStyle: {
-        fontFamily: '',
+        // fontFamily: '',
         fontSize: 18, 
         fontWeight: 'bold'
     }

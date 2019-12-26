@@ -21,7 +21,8 @@ export default class DetailView extends Component {
         return {
             title: item.title,
             headerStyle: {
-                elevation: 0
+                elevation: 0,
+                borderBottomWidth:0,
             }
         }
     }
@@ -66,7 +67,8 @@ export default class DetailView extends Component {
           .ref('List/')
           .child(data.id)                               
           .on('value', function(snapshot) {
-              console.log("val--"+snapshot.val().isFav)
+            //   console.log("val--"+snapshot.val().isFav)
+            if(snapshot.val().isFav !== null)
             self.setState({ isFav: snapshot.val().isFav })
         })
 
